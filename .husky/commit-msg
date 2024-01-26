@@ -26,9 +26,6 @@ if [ -z "$ISSUE_ID" ]; then
 fi
 
 
-
-# Prevent  adding a issue key in commits that already have a JIRA issue key
-
 # i.g. HEY-1: HEY-1: my feature
 
 if [[ $COMMIT_MESSAGE == $ISSUE_ID* ]]; then
